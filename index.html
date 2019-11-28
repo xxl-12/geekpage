@@ -2,123 +2,110 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>geek</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<title>盒子</title>
 	<style>
-    a.geek { font-size:155px;}
-    </style>
-    <a href="#" class="geek">Geek</a>
-    <style>
-.button {
-  display: inline-block;
-  border-radius: 60px;
-  background-color: #df147b;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 44px;
-  padding: 20px;
-  width: 411px;
-  height: 115px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+	.button {
+	  display: inline-block;
+	  border-radius: 60px;
+	  background-color: #df147b;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 44px;
+	  padding: 20px;
+	  width: 411px;
+	  height: 115px;
+	  transition: all 0.5s;
+	  cursor: pointer;
+	  margin: 5px;
+	}
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+	.button span {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
 
-.button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+	.button span:after {
+	  content: '»';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
 
-.button:hover span {
-  padding-right: 25px;
-}
+	.button:hover span {
+	  padding-right: 25px;
+	}
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-</style>	
+	.button:hover span:after {
+	  opacity: 1;
+	  right: 0;
+	}
+	</style>	
 </head>
-<body>
-	
-		<div class="topshadow">
-		<img src="http://q0y5rkjuy.bkt.clouddn.com/topshadow.png" ondragstart="return false" id="shadow">
-	    </div>
-        <div id="d1">
-        	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%BD%A2%E7%8A%B6%201.png" ondragstart="return false">
-        </div>
-        <div id="d2">
-        	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%BD%A2%E7%8A%B6%202.png" ondragstart="return false">
-        </div>
-        
-    <div id="b">
+<body ondragstart="return false"><!--禁止拖动图片-->
+	<div id="top">
+		<img src="http://q0y5rkjuy.bkt.clouddn.com/topshadow.png" id="shadow">
+		<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%BD%A2%E7%8A%B6%201.png" id="d1" >
+		<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%BD%A2%E7%8A%B6%202.png" id="d2">
+		<a href="#" id ="geek">Geek</a>
+	</div>
+	<div id="tw">
     	<div class="fx" id="aq">
-    		<h1>安全</h1>
+    		<h1>产品</h1>
     	</div>
     	<div class="fx" id="kf">
-    		<h1>开发</h1>
+    		<h1>安全</h1>
     	</div>	
     	<div class="fx" id="cp">
-    		<h1>产品	</h1>
-    	</div>	
+    		<h1>开发</h1>
+    	</div>
     </div>
     <div id="c">
-    	<div>
-    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E5%88%86%E5%89%B2%E7%BA%BF.png" ondragstart="return false" id="ce">
-        </div>
-    	<div id="p">
-    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E6%8F%92%E5%9B%BE.png" ondragstart="return false">
-        <div id="header">
-        	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E6%A0%87%E9%A2%98.png" ondragstart="return false">
-        </div>
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E5%88%86%E5%89%B2%E7%BA%BF.png" id="ce">
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E6%8F%92%E5%9B%BE.png" id="p">
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D-%E6%A0%87%E9%A2%98.png" id="header">
     </div>
     <div id="d">
     	<div id="cy">
-    	<img src="http://q0y5rkjuy.bkt.clouddn.com/members_introduce.png" ondragstart="return false">
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/members_introduce.png">
         </div>
         <div class="rw" id="rw1">
-        	<img src="http://q0y5rkjuy.bkt.clouddn.com/1082bedf3694e2f289886e865f24d289.jpeg" ondragstart="return false" class="tx">
+        	<img src="http://q0y5rkjuy.bkt.clouddn.com/1082bedf3694e2f289886e865f24d289.jpeg" class="tx">
         	<h4>pwwd</h4><br>
         	<h5>balabalababala</h5>
-        	
         </div>
         <div class="rw" id="rw2">
-        	<img src="http://q0y5rkjuy.bkt.clouddn.com/c5ec5017e0ade63c52c33d5dd15d74f5.jpeg" ondragstart="return false" class="tx">
+        	<img src="http://q0y5rkjuy.bkt.clouddn.com/c5ec5017e0ade63c52c33d5dd15d74f5.jpeg" class="tx">
         	<h4>peed</h4><br>
         	<h5>balabalababala</h5>
         </div>
     </div>
     <div id="e">
-    	<div id="cj">
-    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%B0%8F%E7%BB%84%E6%88%90%E5%B0%B1%20%E6%A0%87%E9%A2%98.png" ondragstart="return false">
-        </div>
-        <div id="zj">
-        </div>
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/%E5%B0%8F%E7%BB%84%E6%88%90%E5%B0%B1%20%E6%A0%87%E9%A2%98.png" id="cj">
         <div id="one" class="cjk"></div>
         <div id="two" class="cjk"></div>
         <div id="three" class="cjk"></div>
-    </div>
+        <div id="zj"></div>
+
+    </div><!--
+    <div id="f">
+    	<img src="http://q0y5rkjuy.bkt.clouddn.com/bottom.png" id="fe">
+    	<h3 id="tex">加入我们</h3>
+    	<button>创造自己的未来</button>
+    </div>-->
     <div id="f">
     	<img src="http://q0y5rkjuy.bkt.clouddn.com/bottom.png" ondragstart="return false" id="fe">
-    	<div>
+    	<div id="ss">
     		<h3>加入我们</h3>
     	</div>
     	<div>
     		<button class="button" style="vertical-align:middle"><span>创造自己的未来</span></button>
     	</div>
-    </div>
+    </div>	
 </body>
 </html>
